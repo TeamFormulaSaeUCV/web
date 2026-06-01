@@ -557,6 +557,116 @@ body {
             font-size: 1rem;
         }
 
+        /* =========================================
+   PÁGINA DE DONACIONES
+   ========================================= */
+.seccion-donaciones {
+    padding: 40px 20px 20px 20px; /* Espacio arriba para que el menú no lo tape */
+    background-color: linear-gradient(rgba(17, 17, 17, 0.5), var(--bg-dark)), url("style/img/upscalemedia-transformed.png");
+    min-height: 100vh;
+}
+
+.contenedor-donaciones {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contenedor-donaciones .titulo-principal {
+    font-size: 2.5rem;
+    color: #111;
+    margin-bottom: 1rem;
+    font-family: 'Audiowide', sans-serif; /* Usa tu fuente tecnológica */
+}
+
+.texto-intro {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Grid para que las tarjetas se pongan lado a lado en PC y una sobre otra en móviles */
+.grid-donaciones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+.tarjeta-donacion {
+    background-color: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid #ff6600; /* Borde superior con el color SAE */
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-donacion:hover {
+    transform: translateY(-5px); /* Efecto de salto al pasar el mouse */
+}
+
+.icono-pago {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-donacion h3 {
+    font-size: 1.3rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+}
+
+.datos-pago p {
+    font-size: 0.95rem;
+    color: #444;
+    margin: 8px 0;
+    text-align: left; /* Alineamos los datos a la izquierda para mejor lectura */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.contacto-patrocinio {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.contacto-patrocinio h3 {
+    margin-top: 0;
+    color: #ff6600;
+}
+
+.btn-patrocinio {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 12px 24px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.btn-patrocinio:hover {
+    background-color: #cc5200;
+}
+
+.icono-pago {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    color: #ff6600; /* Aplica el naranja SAE al icono */
+    transition: transform 0.3s ease;
+}
+
+/* Un pequeño efecto para que el icono crezca al pasar el mouse */
+.tarjeta-donacion:hover .icono-pago {
+    transform: scale(1.1);
+}
+
 /* =========================================
    DISEÑO RESPONSIVO (MEDIA QUERIES MAESTRAS)
    ========================================= */
@@ -821,6 +931,42 @@ body {
 
     .footer-right-block {
         display: none;
+    }
+
+    /* =========================================
+       DONACIONES EN MÓVILES
+       ========================================= */
+    .seccion-donaciones {
+        padding: 100px 15px 40px 15px; /* Reducimos los márgenes laterales y superiores */
+    }
+
+    .contenedor-donaciones .titulo-principal {
+        font-size: 1.8rem; /* Achicamos el título para que no se desborde o se parta feo */
+    }
+
+    .texto-intro {
+        font-size: 0.95rem; /* Texto un poco más pequeño */
+        margin-bottom: 2rem;
+    }
+
+    .grid-donaciones {
+        grid-template-columns: 1fr; /* Fuerza a que las tarjetas se apilen una exactamente debajo de la otra */
+        gap: 15px;
+    }
+
+    .tarjeta-donacion {
+        padding: 1.5rem 1rem; /* Tarjetas un poco más compactas para aprovechar el espacio */
+    }
+
+    .contacto-patrocinio {
+        padding: 1.5rem 1rem;
+    }
+
+    .btn-patrocinio {
+        width: 100%; /* El botón ocupa todo el ancho de la pantalla para que sea fácil de tocar con el dedo pulgar */
+        box-sizing: border-box;
+        text-align: center;
+        padding: 15px 0;
     }
 
 }
