@@ -171,7 +171,7 @@ body {
 .event-section {
     background-color: #274683; 
     padding: 3rem 0rem;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -599,7 +599,7 @@ body {
     padding: 2rem 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border-top: 5px solid #ff6600; /* Borde superior con el color SAE */
+    border-top: 5px solid #274683; /* Borde superior con el color SAE */
     transition: transform 0.3s ease;
 }
 
@@ -636,14 +636,14 @@ body {
 
 .contacto-patrocinio h3 {
     margin-top: 0;
-    color: #ff6600;
+    color: #fda417;
 }
 
 .btn-patrocinio {
     display: inline-block;
     margin-top: 1rem;
     padding: 12px 24px;
-    background-color: #ff6600;
+    background-color: #fda417;
     color: #fff;
     text-decoration: none;
     font-weight: bold;
@@ -652,19 +652,223 @@ body {
 }
 
 .btn-patrocinio:hover {
-    background-color: #cc5200;
+    background-color: #c98313;
 }
 
 .icono-pago {
     font-size: 2.8rem;
     margin-bottom: 1rem;
-    color: #ff6600; /* Aplica el naranja SAE al icono */
+    color: #274683; /* Aplica el naranja SAE al icono */
     transition: transform 0.3s ease;
 }
 
 /* Un pequeño efecto para que el icono crezca al pasar el mouse */
 .tarjeta-donacion:hover .icono-pago {
     transform: scale(1.1);
+}
+
+/* ========================================= */
+/* ESTILOS ZONA DE DONACIONES - PÁGINA PRINCIPAL */
+/* ========================================= */
+.home-donations {
+    background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
+    border-top: 4px solid #274683;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.donations-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.donations-title {
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.donations-text {
+    font-family: 'Achieve', sans-serif;
+    font-size: 1.2rem;
+    color: #cccccc;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.btn-donar-home {
+    display: inline-block;
+    background-color: #0056b3; 
+    color: #ffffff;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.btn-donar-home:hover {
+    background-color: #004494; /* Un azul un poco más oscuro para el efecto hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+}
+
+/* ========================================= */
+/* ESTILOS DE LA PÁGINA AYUDA.HTML (DONACIONES) */
+/* ========================================= */
+
+/* Cabecera */
+.ayuda-hero {
+    background: linear-gradient(rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.9)), url('../style/img/2.jpg') center/cover;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 4px solid #274683;
+}
+
+.ayuda-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+span.clase1{
+    color: var(--primary);
+}
+
+span.clase2{
+    color: #c22319;
+}
+
+.ayuda-subtitle {
+    font-family: 'Achieve', sans-serif;
+    font-size: 1.2rem;
+    color: #cccccc;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Instrucciones de Donación */
+.instrucciones-donacion {
+    padding: 80px 20px;
+    background-color: #1a1a1a;
+}
+
+.instrucciones-title {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 2.2rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pasos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+}
+
+.paso-card {
+    background-color: #222222;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #333333;
+    transition: transform 0.3s ease;
+}
+
+.paso-card:hover {
+    transform: translateY(-5px);
+}
+
+.paso-card.destacado1{
+    border-color: #274683;
+}
+
+.paso-card.destacado2{
+    border-color: #fda417;
+}
+
+.paso-card.destacado3{
+    border-color: #c22319;
+}
+
+.paso-numero1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #274683;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.paso-numero2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #fda417;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.paso-numero3 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: #c22319;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.paso-titulo {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.3rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.paso-texto {
+    font-family: 'Achieve', sans-serif;
+    color: #bbbbbb;
+    line-height: 1.5;
+}
+
+.paso-texto strong {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+/* Botón de Donación */
+.contenedor-boton {
+    text-align: center;
+}
+
+.btn-donar-oficial {
+    display: inline-block;
+    background-color: #274683;
+    color: #e6e6e6;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.3rem;
+    padding: 18px 45px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(39, 70, 131, 0.815);
+}
+
+.btn-donar-oficial:hover {
+    background-color: #274683;
+    box-shadow: 0 4px 15px rgb(39, 70, 131);
+    transform: scale(1.02);
+    color: #ffffff;
 }
 
 /* =========================================
