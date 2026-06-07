@@ -1233,6 +1233,104 @@ span.clase2{
         padding: 15px 10px;  /* Ajuste de los bordes del botón */
         box-sizing: border-box;
     }
+
+    /* --- Ajustes Globales (Cabeceras Hero) --- */
+    .ayuda-hero {
+        padding: 60px 15px; /* Reducimos el espacio interior gigante */
+    }
+
+    .ayuda-title {
+        font-size: 2rem; /* Título principal más compacto */
+        line-height: 1.2;
+    }
+
+    .ayuda-subtitle {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 0 10px;
+    }
+
+    /* --- Ajustes para Ayudas.html (Pasos de Egresados UCV) --- */
+    .instrucciones-donacion {
+        padding: 50px 15px;
+    }
+
+    .instrucciones-title {
+        font-size: 1.7rem;
+        margin-bottom: 30px;
+    }
+
+    .pasos-grid {
+        gap: 20px; /* Menos espacio entre las tarjetas de pasos */
+    }
+
+    .paso-card {
+        padding: 20px 15px;
+    }
+
+    .paso-numero {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .btn-donar-oficial {
+        display: block; /* Convertimos el botón en un bloque completo */
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        padding: 15px 10px;
+        box-sizing: border-box; /* Evita que el padding rompa el ancho */
+    }
+
+    /* --- Ajustes para Donaciones.html (Tarjetas de métodos) --- */
+    .donaciones-opciones {
+        padding: 40px 15px;
+    }
+
+    .opciones-grid {
+        gap: 20px;
+    }
+
+    .donacion-card {
+        padding: 25px 15px;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .dato-destacado {
+        font-size: 1.1rem;
+        padding: 8px;
+    }
+
+    .btn-donar-card {
+        display: block;
+        width: 100%; /* Botones de 100% de ancho dentro de la tarjeta */
+        box-sizing: border-box;
+        padding: 12px 10px;
+    }
+
+    /* Ajuste especial para los datos bancarios y QR */
+    .datos-bancarios {
+        padding: 10px;
+    }
+
+    .datos-bancarios li {
+        font-size: 0.95rem;
+        word-wrap: break-word; /* Evita que números de cuenta largos rompan la tarjeta */
+    }
+
+    .qr-imagen {
+        width: 130px; /* El QR un poco más pequeño para pantallas estrechas */
+        border-width: 3px;
+    }
+
 }
 
 
@@ -1311,5 +1409,13 @@ span.clase2{
     
     .ocupar-espacio {
         display: none;
+    }
+
+    .ayuda-title {
+        font-size: 1.6rem;
+    }
+    
+    .instrucciones-title {
+        font-size: 1.4rem;
     }
 }
