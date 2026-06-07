@@ -171,7 +171,7 @@ body {
 .event-section {
     background-color: #274683; 
     padding: 3rem 0rem;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -432,7 +432,7 @@ body {
         
         .equipo-hero {
             text-align: center;
-            padding: 4rem 2rem 2rem 2rem;
+            padding: 4rem 2rem 0rem 2rem;
             background: linear-gradient(rgba(17, 17, 17, 0.5), var(--bg-dark)), url("style/img/upscalemedia-transformed.png");
             background-size: cover;
             background-position: center;
@@ -613,6 +613,7 @@ body {
 }
 
 .tarjeta-donacion h3 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.3rem;
     color: #222;
     margin-bottom: 1.5rem;
@@ -632,6 +633,7 @@ body {
     color: #fff;
     padding: 2rem;
     border-radius: 12px;
+    margin-top: 1.5rem;
 }
 
 .contacto-patrocinio h3 {
@@ -667,9 +669,35 @@ body {
     transform: scale(1.1);
 }
 
-/* ========================================= */
-/* ESTILOS ZONA DE DONACIONES - PÁGINA PRINCIPAL */
-/* ========================================= */
+.qr-container {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Línea sutil de separación */
+    text-align: center;
+}
+
+.qr-texto {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.qr-imagen {
+    width: 180px; /* Tamaño ideal: escaneable pero no invasivo */
+    height: auto;
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    border: 4px solid #ffffff; /* Marco blanco para que el QR resalte y funcione bien */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+
+.qr-imagen:hover {
+    transform: scale(1.05); /* Efecto de ligero acercamiento al pasar el mouse */
+}
+
 .home-donations {
     background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
     border-top: 4px solid #274683;
@@ -869,6 +897,17 @@ span.clase2{
     box-shadow: 0 4px 15px rgb(39, 70, 131);
     transform: scale(1.02);
     color: #ffffff;
+}
+
+.grid-donaciones h4{
+    color: rgb(105, 105, 105);
+    display: flex;
+    justify-content: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    word-spacing: 5px;
 }
 
 /* =========================================
@@ -1141,7 +1180,7 @@ span.clase2{
        DONACIONES EN MÓVILES
        ========================================= */
     .seccion-donaciones {
-        padding: 100px 15px 40px 15px; /* Reducimos los márgenes laterales y superiores */
+        padding: 50px 15px 40px 15px; /* Reducimos los márgenes laterales y superiores */
     }
 
     .contenedor-donaciones .titulo-principal {
@@ -1173,7 +1212,29 @@ span.clase2{
         padding: 15px 0;
     }
 
+    .donations-title {
+        font-size: 1.6rem;  /* Título más pequeño para que no ocupe toda la pantalla */
+        letter-spacing: 1px;
+        line-height: 1.3;
+    }
+
+    .donations-text {
+        font-size: 1rem;    /* Texto de lectura adaptado a pantallas chicas */
+        margin-bottom: 25px;
+        text-align: justify; /* Opcional: mejora la lectura de párrafos largos en móvil */
+    }
+
+    .btn-donar-min {
+        display: block;      /* Hace que el botón se comporte como un bloque */
+        width: 100%;         /* Ocupa casi todo el ancho de la pantalla */
+        max-width: 320px;    /* Límite máximo para que no se vea exagerado */
+        margin: 0 auto;      /* Centra el botón perfectamente */
+        font-size: 1rem;     /* Letra del botón más pequeña */
+        padding: 15px 10px;  /* Ajuste de los bordes del botón */
+        box-sizing: border-box;
+    }
 }
+
 
 @media (max-width: 600px) {
     .fila-iconos-rs { flex-wrap: wrap; justify-content: center; gap: 1.5rem; }
