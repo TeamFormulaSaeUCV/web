@@ -171,7 +171,7 @@ body {
 .event-section {
     background-color: #274683; 
     padding: 3rem 0rem;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
