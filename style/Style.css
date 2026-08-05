@@ -910,6 +910,29 @@ span.clase2{
     word-spacing: 5px;
 }
 
+.video-propio-container {
+    max-width: 1000px; 
+    margin: 40px auto; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border: 2px solid #0056b3; 
+}
+
+.video-propio-container video {
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+
+.espacio1{
+    display: none;
+}
+
+.espacio{
+    display: none;
+}
+
 /* =========================================
    DISEÑO RESPONSIVO (MEDIA QUERIES MAESTRAS)
    ========================================= */
@@ -1331,6 +1354,35 @@ span.clase2{
         border-width: 3px;
     }
 
+    .video-propio-container {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 70%;
+        width: 92.5%;
+        margin: 20px 15px; /* Reducimos los márgenes para no desperdiciar espacio en la pantallita */
+        border-radius: 4px; /* Suavizamos un poco el borde en móviles */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .espacio1{
+        margin: 3vh;
+        display: block;
+    }
+
+    .espacio1 p{
+        color:#333
+    }
+
+    .espacio{
+        margin: 4vh;
+        display: block;
+    }
+
+    .espacio p{
+        color: #333
+    }
 }
 
 
